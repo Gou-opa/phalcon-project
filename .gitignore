@@ -7,6 +7,3 @@
 /config/development/
 
 # End of https://www.gitignore.io/api/phalcon
-
-#modules
-/vendor/

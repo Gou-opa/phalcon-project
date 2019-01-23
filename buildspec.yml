@@ -16,12 +16,10 @@ phases:
     commands:
         - echo "start building" 
         - echo "test composer"
-        - comm=$(php composer.phar --version)
-        - echo "$comm"
-  build:
-    commands:
-        - commm=$(php composer.phar install)
-        - echo "$commm"
+  #build:
+    #commands:
+        #- commm=$(php composer.phar install)
+        #- echo "$commm"
   post_build:
     commands:
         - echo Build vendor completed on `date`

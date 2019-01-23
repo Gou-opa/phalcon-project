@@ -6,9 +6,9 @@ use Phalcon\Logger;
 return new Config([
     'database' => [
         'adapter' => 'Mysql',
-        'host' => '127.0.0.1',
-        'username' => 'root',
-        'password' => '',
+        'host' => 'cicdrdsmysql.cdsh11aykflr.us-east-1.rds.amazonaws.com',
+        'username' => 'admin',
+        'password' => 'L0velycute!',
         'dbname' => 'vokuro'
     ],
     'application' => [

@@ -12,7 +12,7 @@ phases:
   install:
     commands:
         - echo "getting package for phalcon"
-        - sudo apt-get install composer -y
+        - apt-get install composer -y
   pre_build:
     commands:
         - echo "start building" 

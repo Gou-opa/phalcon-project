@@ -12,9 +12,6 @@ phases:
   install:
     commands:
         - echo "getting package for phalcon"
-        - sudo apt-get install curl -y
-        - sudo php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-        - php composer-setup.php --file-name=composer
   pre_build:
     commands:
         - echo "start building" 

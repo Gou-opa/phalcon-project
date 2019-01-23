@@ -12,14 +12,17 @@ phases:
   install:
     commands:
         - echo "getting package for phalcon"
+        - sudo apt-get install composer -y
   pre_build:
     commands:
         - echo "start building" 
         - echo "test composer"
-        - php composer.phar --version
+        - comm=$(composer --version)
+        - echo "$comm"
   build:
     commands:
-        - sudo php composer.phar install
+        - commm=$(composer install)
+        - echo "$commm"
   post_build:
     commands:
         - echo Build vendor completed on `date`

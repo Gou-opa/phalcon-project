@@ -3,12 +3,27 @@
 use Phalcon\Config;
 use Phalcon\Logger;
 
+$lines = file('./../../.env');
+foreach ($lines as $lineNumber => $line) {
+    if (strpos($line, 'secret') !== false) {
+        $json = json_decode(substr($line, 7), true);
+        if($json['engine'] == "mysql"){
+            $host = $json['host'];
+            $username = $json['username'];
+            $port = $json['port'];
+            $password = $json['password'];
+            $dbname = $json['dbname'];
+        }
+        break;
+    }
+}
+
 return new Config([
     'database' => [
-        'adapter' => 'Mysql',
-        'host' => 'cicdrdsmysql.cdsh11aykflr.us-east-1.rds.amazonaws.com',
-        'username' => 'admin',
-        'password' => 'L0velycute!',
+        'adapter' => ucfirst($engine),
+        'host' => $host,
+        'username' => $username,
+        'password' => $password,
         'dbname' => 'vokuro'
     ],
     'application' => [

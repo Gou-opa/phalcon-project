@@ -16,6 +16,7 @@ phases:
     commands:
         - echo "start building" 
         - echo "test composer"
+        - touch .env
   #build:
     #commands:
         #- commm=$(php composer.phar install)

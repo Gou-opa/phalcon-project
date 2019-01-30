@@ -5,5 +5,4 @@
 ### Phalcon ###
 /cache/
 /config/development/
-.env
 # End of https://www.gitignore.io/api/phalcon

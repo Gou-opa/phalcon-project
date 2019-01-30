@@ -4,5 +4,4 @@
 apt-get update
 #remove old deploy
 rm -rf /var/www/html
-apt-get install python3 python-pip python-dev build-essential -y
-pip install boto3
+apt-get install python3 python3-pip python3-dev build-essential -y

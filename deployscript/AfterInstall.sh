@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-pip install boto3
-pip install pipupgrade
+pip3 install boto3
+pip3 install pipupgrade
 pipupgrade --latest --yes
 echo done
-python /var/www/html/convert.py
+python3 /var/www/html/convert.py

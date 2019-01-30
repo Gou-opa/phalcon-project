@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 echo done
-python3 convert.py
+python3 /var/www/html/convert.py
